@@ -1,4 +1,5 @@
 export ZSH="/Users/os/.oh-my-zsh"
+export PATH=$PATH:$(python3 -m site --user-base)/bin
 ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
 
