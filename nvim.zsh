@@ -10,3 +10,7 @@ if ! pip3 show -q neovim; then
 	pip3 install --user --upgrade neovim
 fi
 
+if ! pip3 show -q neovim-remote; then
+	pip3 install --user --upgrade neovim-remote
+fi
+
