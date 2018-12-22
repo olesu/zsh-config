@@ -16,7 +16,7 @@ zplug "plugins/docker", from:oh-my-zsh
 zplug "plugins/iterm2", from:oh-my-zsh
 zplug "plugins/mvn", from:oh-my-zsh
 zplug "plugins/osx", from:oh-my-zsh
-zplug "sharat87/zsh-vim-mode"
+zplug "laurenkt/zsh-vimto"
 zplug "willghatch/zsh-saneopt"
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting"

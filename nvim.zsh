@@ -16,6 +16,11 @@ fi
 
 if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
 	prompt_powerlevel9k_teardown
+	if [ -x "$(command -v nvr)" ]; then
+		alias nvim=nvr
+	else
+		alias nvim='echo "No nesting!"'
+	fi
 else
 	prompt_powerlevel9k_setup
 fi
