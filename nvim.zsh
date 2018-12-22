@@ -14,3 +14,9 @@ if ! pip3 show -q neovim-remote; then
 	pip3 install --user --upgrade neovim-remote
 fi
 
+if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
+	prompt_powerlevel9k_teardown
+else
+	prompt_powerlevel9k_setup
+fi
+
