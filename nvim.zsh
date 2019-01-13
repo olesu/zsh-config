@@ -1,6 +1,7 @@
 export VISUAL=nvim
 export VIMCONFIG=~/.config/vim
 export VIMDATA=~/.local/share/vim
+export FZF_DEFAULT_COMMAND='rg --files'
 
 # Use Neovim instead of Vim or Vi
 alias vim=nvim
