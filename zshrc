@@ -1,6 +1,14 @@
-export ZSH="/Users/os/.oh-my-zsh"
 export PATH=$PATH:$(python3 -m site --user-base)/bin
+
+_src() {
+	source "${HOME}/.config/zsh/$1"
+}
+
 export FZF_DEFAULT_COMMAND='rg --files'
+
+_src "pre-init/completion.zsh"
+
+export ZSH="/Users/os/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 source $ZSH/oh-my-zsh.sh
 
