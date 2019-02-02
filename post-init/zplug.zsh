@@ -20,7 +20,7 @@ zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
 zplug "~/.config/zsh", from:local, use:"*.zsh"
 
 if ! zplug check; then
-  zplug install
+	zplug install
 fi
 
 zplug load
