@@ -14,9 +14,14 @@ _init() {
 _post_init() {
 	_src "post-init/zplug.zsh"
 	_src "post-init/iterm2.zsh"
+	_src "post-init/bindings.zsh"
+	_src "post-init/tmux.zsh"
 }
 
 _pre_init
 _init
 _post_init
 
+
+# added by travis gem
+[ -f /Users/os/.travis/travis.sh ] && source /Users/os/.travis/travis.sh
