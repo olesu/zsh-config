@@ -3,6 +3,7 @@ _src() {
 }
 
 _pre_init() {
+	_src "pre-init/lang.zsh"
 	_src "pre-init/path.zsh"
 	_src "pre-init/completion.zsh"
 }
