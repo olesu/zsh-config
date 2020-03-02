@@ -16,11 +16,12 @@ zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-syntax-highlighting"
 zplug "peterhurford/git-aliases.zsh"
 zplug "chrissicool/zsh-256color"
-zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
+zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
+#zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
 zplug "~/.config/zsh", from:local, use:"*.zsh"
 
 if ! zplug check; then
-  zplug install
+	zplug install
 fi
 
 zplug load
